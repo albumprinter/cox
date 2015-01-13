@@ -24,6 +24,7 @@
     "bin": "./bin"
   },
   "dependencies": {
-    "optimist": "^0.6.1"
+    "optimist": "^0.6.1",
+    "shelljs": "^0.3.0"
   }
 }
