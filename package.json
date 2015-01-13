@@ -1,0 +1,27 @@
+{
+  "name": "cox",
+  "version": "0.1.0",
+  "preferGlobal": "true",
+  "description": "git commander for multi-repositories",
+  "main": "cox.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andrepadez/cox.git"
+  },
+  "keywords": [
+    "git"
+  ],
+  "author": "andre.padez@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrepadez/cox/issues"
+  },
+  "homepage": "https://github.com/andrepadez/cox",
+
+  "directories": {
+    "bin": "./bin"
+  }
+}
