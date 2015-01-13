@@ -20,8 +20,10 @@
     "url": "https://github.com/andrepadez/cox/issues"
   },
   "homepage": "https://github.com/andrepadez/cox",
-
   "directories": {
     "bin": "./bin"
+  },
+  "dependencies": {
+    "optimist": "^0.6.1"
   }
 }
