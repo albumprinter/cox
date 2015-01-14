@@ -1,6 +1,6 @@
 {
   "name": "cox",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "preferGlobal": "true",
   "description": "git commander for multi-repositories",
   "main": "cox.js",
@@ -24,6 +24,7 @@
     "bin": "./bin"
   },
   "dependencies": {
+    "colors": "^1.0.3",
     "lodash": "^2.4.1",
     "minimist": "^1.1.0",
     "nodegit": "^0.2.4",
