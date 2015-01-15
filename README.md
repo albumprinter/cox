@@ -25,7 +25,7 @@ Then runs `npm install` in these repositories too.
 ```
 cox start <<branch-name>>
 ```
-Create a new branch with name <<branch-name>> in all repositories.
+Create a new branch with name ```<<branch-name>>``` in all repositories.
 
 ### npm commands
 #### npm install
@@ -56,4 +56,4 @@ Reset all repositories.
 ```
 cox checkout <<branch-name>>
 ```
-Checkout a branch <<branch-name>> in all repositories.
+Checkout a branch ```<<branch-name>>``` in all repositories.
