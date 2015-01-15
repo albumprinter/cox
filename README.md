@@ -57,3 +57,19 @@ Reset all repositories.
 cox checkout <<branch-name>>
 ```
 Checkout a branch ```<<branch-name>>``` in all repositories.
+
+#### git status
+```
+cox status
+```
+Status in all repositories.
+
+#### git diff
+```
+cox diff
+```
+Diff in all repositories.
+Can be combined, like:
+```
+cox diff | less
+```
