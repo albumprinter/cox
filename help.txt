@@ -1,0 +1,34 @@
+COX - version {{version}}
+
+CLI commander for developing with our current module system
+Allows for running necessary tasks in the project folder and all the modules
+All Cox commands should be run from the root of the main project.
+
+Usage: "cox <<command>> args
+
+Commands:
+	install - installs all the project modules (including npm dependencies)
+		usage: cox install
+	update (not yet) - runs npm update in the project folder and in all modules
+		usage: cox update
+	start - start developing on a new branch <ticket>
+		usage: cox start XE-1234
+	checkout - change to another branch <ticket>
+		usage: cox checkout XE-1234
+		usage: cox checkout -b XE-1234
+	reset - runs 'git reset --hard' on all repos
+		usage: cox reset
+	pull - GIT pulls the latest changes in the current branch
+		usage: cox pull
+	status - displays the GIT status of all repos
+		usage: cox status
+	diff - displays the GIT diff of all repos
+		usage: cox diff
+	add - runs git add to all files unstaged in all repos
+		usage: cox add
+	commit - commits staged changes to all the repos with given message
+		usage: cox commit "<<message>>"
+	push - GIT pushes the latest changes in the current branch
+		usage: cox push
+
+Please use Cox responsibly, don't forget to use protection.
