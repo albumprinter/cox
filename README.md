@@ -1,5 +1,5 @@
 # cox
-git commander for multi-repositories
+Git commander for multi-repositories.
 
 ## Install
 ```
