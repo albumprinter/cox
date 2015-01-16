@@ -1,6 +1,6 @@
 {
   "name": "cox",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "preferGlobal": "true",
   "description": "git commander for multi-repositories",
   "main": "cox.js",
@@ -29,7 +29,6 @@
     "minimist": "^1.1.0",
     "prompt": "^0.2.14",
     "q": "^1.1.2",
-    "shelljs": "^0.3.0",
-    "supplant": "^0.2.0"
+    "shelljs": "^0.3.0"
   }
 }
