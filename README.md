@@ -1,7 +1,9 @@
 # cox
-Git commander for multi-repositories.
+CLI commander for developing with our current module system  
+Allows for running necessary tasks in the project folder and all the modules  
+All Cox commands should be run from the root of the main project.  
 
-## Install
+## Installation
 ```
 npm install -g cox
 ```
@@ -12,7 +14,7 @@ npm install -g cox
 ```
 cox install
 ```
-Install git repositories defined in `package.json` `coxDependencies`, like:
+installs all the project modules, defined in `package.json` `coxDependencies`, like:
 ```
   "coxDependencies": {
     "some-lib": "git@github.com:username/some-lib.git",
@@ -21,55 +23,74 @@ Install git repositories defined in `package.json` `coxDependencies`, like:
 ```
 Then runs `npm install` in these repositories too.
 
+#### update
+```
+cox update
+```
+runs npm update in the project folder and in all modules
+
+
 ### Start
 ```
-cox start <<branch-name>>
+cox start XE-1234
 ```
-Create a new branch with name ```<<branch-name>>``` in all repositories.
+Start developing on a new branch <ticket>
 
-### npm commands
-#### npm install
-```
-cox npm install
-```
-Runs `npm install` in the existing repositories.
-#### npm update
-```
-cox npm update
-```
-Runs `npm update` in the existing repositories.
 
-### git commands
-#### git pull
+#### checkout
 ```
-cox pull
+cox checkout XE-1234
+//or to checkout a new branch:
+cox checkout -b XE-1234
 ```
-Pull in all repositories.
+Change to another branch <ticket>
 
-#### git reset --hard
+#### reset
 ```
 cox reset
 ```
-Reset all repositories.
+runs 'git reset --hard' on all repos
 
-#### git checkout
+#### pull
 ```
-cox checkout <<branch-name>>
+cox pull
 ```
-Checkout a branch ```<<branch-name>>``` in all repositories.
+GIT pulls the latest changes in the current branch
 
-#### git status
+#### status
 ```
 cox status
 ```
-Status in all repositories.
+displays the GIT status of all repos
 
-#### git diff
+#### diff
 ```
 cox diff
 ```
-Diff in all repositories.
-Can be combined, like:
+displays the GIT diff of all repos
+
+#### add
 ```
-cox diff | less
+cox add
 ```
+runs git add to all files unstaged in all repos
+
+#### commit
+```
+cox commit "<message>"
+```
+commits staged changes to all the repos with given message
+
+#### push
+```
+cox push <ticket>
+```
+GIT pushes the latest changes in the current branch
+
+#### kill
+```
+cox kill <ticket>
+```
+checks out develop and kills the branch locally
+
+*Please use Cox responsibly, don't forget to use protection.*
