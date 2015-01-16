@@ -9,7 +9,7 @@ Usage: "cox <<command>> args
 Commands:
 	install - installs all the project modules (including npm dependencies)
 		usage: cox install
-	update (not yet) - runs npm update in the project folder and in all modules
+	update - runs npm update in the project folder and in all modules
 		usage: cox update
 	start - start developing on a new branch <ticket>
 		usage: cox start XE-1234
@@ -27,8 +27,10 @@ Commands:
 	add - runs git add to all files unstaged in all repos
 		usage: cox add
 	commit - commits staged changes to all the repos with given message
-		usage: cox commit "<<message>>"
+		usage: cox commit "<message>"
 	push - GIT pushes the latest changes in the current branch
 		usage: cox push
+	kill - checks out develop and kills the branch locally
+		usage: cox kill <ticket>
 
 Please use Cox responsibly, don't forget to use protection.
