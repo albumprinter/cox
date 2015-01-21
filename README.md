@@ -1,6 +1,11 @@
 # cox
-CLI commander for developing with our current module system  
-Allows for running necessary tasks in the project folder and all the modules  
+CLI commander for developing with multiple submodules, each with their own Git repository.
+Cox runs both Git and NPM-related tasks on the project source folder, as well as all the versioned submodules.
+
+As such, a "cox checkout <branchName>" should be seen as : check out branch <branchName> in the project root, AS WELL
+as in all the submodules' repositories. This allows you to create a new feature (one that might affect contents in
+multiple submodules) recursively in a single command (see "cox start").
+
 All Cox commands should be run from the root of the main project.  
 
 ## Installation
@@ -21,41 +26,40 @@ installs all the project modules, defined in `package.json` `coxDependencies`, l
     "some-other-lib": "git@github.com:username/some-other-lib.git",
   }
 ```
-Then runs `npm install` in these repositories too.
+Then runs `npm install` on these repositories too.
 
 #### update
 ```
 cox update
 ```
-runs npm update in the project folder and in all modules
+runs npm update in the project folder and in all submodules
 
 
 ### Start
 ```
-cox start XE-1234
+cox start <branchName>
 ```
-Start developing on a new branch <ticket>
-
+Start developing on a new branch with given <branchName>
 
 #### checkout
 ```
-cox checkout XE-1234
+cox checkout <branchName>
 //or to checkout a new branch:
-cox checkout -b XE-1234
+cox checkout -b <branchName>
 ```
-Change to another branch <ticket>
+Change to another branch <branchName>
 
 #### reset
 ```
 cox reset
 ```
-runs 'git reset --hard' on all repos
+runs 'git reset --hard'.
 
 #### pull
 ```
 cox pull
 ```
-GIT pulls the latest changes in the current branch
+GIT pulls the latest changes in the current branch.
 
 #### status
 ```
@@ -83,14 +87,14 @@ commits staged changes to all the repos with given message
 
 #### push
 ```
-cox push <ticket>
+cox push <branchName>
 ```
-GIT pushes the latest changes in the current branch
+GIT pushes the latest changes in the current branch to origin
 
 #### kill
 ```
-cox kill <ticket>
+cox kill <branchName>
 ```
-checks out develop and kills the branch locally
+checks out develop, kills the branch locally and kills the branch remotely on origin (!)
 
 *Please use Cox responsibly, don't forget to use protection.*
