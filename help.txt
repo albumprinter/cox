@@ -29,8 +29,13 @@ Commands:
 	commit - commits staged changes to all the repos with given message
 		usage: cox commit "<message>"
 	push - GIT pushes the latest changes in the current branch
-		usage: cox push
+		usage: cox push <ticket>
 	kill - checks out develop and kills the branch locally
 		usage: cox kill <ticket>
+	stash - stashes or pops in the working branch
+		usage: cox stash
+		usage: cox stash pop
+	woops: stashes changes in the current branch, checks out ticket and pops the stash
+		usage: cox woops <ticket> 
 
 Please use Cox responsibly, don't forget to use protection.
