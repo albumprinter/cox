@@ -1,6 +1,6 @@
 {
   "name": "cox",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "preferGlobal": "true",
   "description": "git commander for multi-repositories",
   "main": "cox.js",
