@@ -20,6 +20,8 @@ Commands:
 		usage: cox reset
 	pull - GIT pulls the latest changes in the current branch
 		usage: cox pull
+	merge - merge branch into the current branch
+		usage: cox merge <branch>
 	status - displays the GIT status of all repos
 		usage: cox status
 	diff - displays the GIT diff of all repos
