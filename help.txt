@@ -11,8 +11,9 @@ Commands:
 		usage: cox install
 	update - runs npm update in the project folder and in all modules
 		usage: cox update
-	start - start developing on a new branch <ticket>
-		usage: cox start XE-1234
+	start - start developing on a new branch <ticket> <branch>
+		usage: cox start XE-1234;           default: create new ticket from 'develop'
+		usage: cox start XE-4567 XE-1234;   creates the new ticket from 'XE-1234'
 	checkout - change to another branch <ticket>
 		usage: cox checkout XE-1234
 		usage: cox checkout -b XE-1234
