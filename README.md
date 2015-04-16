@@ -39,7 +39,11 @@ runs npm update in the project folder and in all submodules
 ```
 cox start <branchName>
 ```
-Start developing on a new branch with given <branchName>
+Start developing on a new branch with given name 'branchName', the new branch will be branched off 'develop' by default.
+```
+cox start <branchName> <sourceBranch>
+```
+Start developing on a new branch with given name 'branchName', the new branch will be branched off 'sourceBranch'.
 
 #### checkout
 ```
