@@ -39,6 +39,11 @@ Commands:
 		usage: cox stash
 		usage: cox stash pop
 	woops: stashes changes in the current branch, checks out ticket and pops the stash
-		usage: cox woops <ticket> 
+		usage: cox woops <ticket>
+	tag: run git tag (delete) command
+	    usage: cox tag <version>
+	    usage: cox tag delete <version>
+    show: run git show command
+        usage: cox show <version>
 
 Please use Cox responsibly, don't forget to use protection.
