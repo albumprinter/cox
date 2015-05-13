@@ -1,6 +1,6 @@
 {
   "name": "cox",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "preferGlobal": "true",
   "description": "git commander for multi-repositories",
   "main": "cox.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:andrepadez/cox.git"
+    "url": "git@github.com:albumprinter/cox.git"
   },
   "keywords": [
     "git"
@@ -17,9 +17,9 @@
   "author": "andre.padez@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andrepadez/cox/issues"
+    "url": "https://github.com/albumprinter/cox/issues"
   },
-  "homepage": "https://github.com/andrepadez/cox",
+  "homepage": "https://github.com/albumprinter/cox",
   "directories": {
     "bin": "./bin"
   },
